@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="top">
+        <h1>Add Your Products Here</h1>
+    <form action="/" method="post">
+        <input type="text"  name="product" >
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <span><p>All Products </p></span>
+    
+    <% if (locals.producta) { %>
+        <ul>
+            <% producta.forEach(name => { %>
+                <li><%= name %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+    <div class="gooey">
+    </div>
+    <div class="gooey" style="position: absolute; top:48%; right:53%; background: linear-gradient(to top right, #0417ed, #f40202)">
+    </div>
+    <div class="gooey" style="position: absolute; top:48%; left:53%; background: linear-gradient(to top right, #31ff03, #ff00ee)">
+    </div>
+</body>
+</html>

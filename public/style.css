@@ -1,0 +1,70 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+button{
+    padding: 10px 10px;
+    border-radius: 50px;
+    color: royalblue;
+    background-color: white;
+    border: none;
+    transition: all ease-in 0.2s; 
+}
+button:hover{
+    background-color: royalblue;
+    color: white;
+}
+.top{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #03c8ff, #ff0000);
+    z-index: 99;
+}
+input{
+    color: black;
+    border-radius: 50px;
+}
+span p{
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    font-size: xx-large;
+    width: 12%;
+}
+.gooey {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+    top: 48%;
+    right: 35%;
+    filter: blur(20px);
+    animation-name: gooey;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+}
+@keyframes gooey {
+    from {
+        filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
+    }
+
+    to {
+        filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
+}
+li{
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: large;
+    z-index: 9996;
+}
